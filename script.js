@@ -46,11 +46,15 @@ updateTask('btn-6','title-6', 'activity-log6');
 
 // clear button
 
-
-
 document.getElementById('clear-btn').addEventListener('click', function(){
    
    document.getElementById('activity_text').style.display = 'none';
 
+
+})
+
+document.getElementById("discover").addEventListener('click', function(){
+
+window.location.href = "blog.html";
 
 })

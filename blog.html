@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+            .poppins{
+      font-family: "Poppins", sans-serif;
+    }
+        </style>
+</head>
+<body class="bg-slate-100 h-screen poppins">
+    <section class="container mx-auto py-5">
+        <nav class="flex justify-between bg-white p-3 rounded-lg shadow-md ">
+            <div class="flex justify-center items-center gap-2"><img class="w-8" src="assets/logo.png" alt="">
+                <h1 class="font-normal text-xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <button id="back-btn" class="btn bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-900">Back to Desk</button>
+
+        </nav>
+        <h1 class="text-2xl font-extrabold text-center my-5">Blogs</h1>
+        <main>
+            <div class="bg-white rounded-lg p-4 space-y-4 my-4">
+                <h1 class="text-xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <p> There are many way that you can select an element in the DOM. like getElementById, getElementByClassName, getElementByTagName, querySelector, querySelectorAll etc.</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 space-y-4 my-4">
+                <h1 class="text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                <p>innerHTML returns the content of an element including tags. innerText returns only the visible text inside the tags. textContent returns all text inside and element including hidden text</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 space-y-4 my-4">
+                <h1 class="text-xl font-bold">Question-3: What is event delegation in the DOM?</h1>
+                <p> Event Delegation is a trick where you add one event listener to a parent element instead of adding it to multiple child elements. The parent listens for events from its children.</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 space-y-4 my-4">
+                <h1 class="text-xl font-bold">Question-4: What is event bubbling in the DOM?</h1>
+                <p> Event Bubbling is when an event starts from the element that was clicked and moves up to its parent elements in the DOM.</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 space-y-4 my-4">
+                <h1 class="text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript</h1>
+                <p> for create we use "document.createElement("tagName")", for add we use .appendChild(), for remove element we use .remove() or .removeChild() </p>
+            </div>
+        </main>
+
+    </section>
+
+    <script src="back-btn.js"></script>
+</body>
+</html>
